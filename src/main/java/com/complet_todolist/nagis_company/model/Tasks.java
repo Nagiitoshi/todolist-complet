@@ -23,10 +23,9 @@ public class Tasks {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String name;
+
     private String descriptionTask;
 
-    private String tasksStatus;
-
-    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime tasksLocalDateTime;
 }
